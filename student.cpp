@@ -8,7 +8,7 @@
 #include <sstream>
 using std::stringstream;
 
-Student::Student(const string &name, unsigned int age, string &major, unsigned short int gpa)
+Student::Student(const string &name, unsigned int age, const string &major, unsigned short int gpa)
 	: Person(name, age), _gpa(gpa){
 	_major = new char[strlen(major.c_str()) + 1];
 	strcpy(_major, major.c_str());

@@ -12,7 +12,7 @@ private:
 	char* _major;
 	unsigned short int _gpa; // 100 based
 public:
-	Student(const string& name, unsigned int age, string& major, unsigned short int gpa = 0);
+	Student(const string& name, unsigned int age, const string& major, unsigned short int gpa = 0);
 	~Student();
 	Student(const Student& student);
 	Student& operator=(const Student& student);
