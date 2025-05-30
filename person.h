@@ -15,10 +15,10 @@ private:
 	unsigned int _age;
 public:
 	Person(const string& name, unsigned int age);
-	~Person();
+	virtual ~Person();
 	Person(const Person& person);
 	Person& operator=(const Person& person);
-	string ToString()const;
+	virtual string ToString()const;
 	void Birthday();
 };
 

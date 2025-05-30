@@ -38,7 +38,7 @@ Student & Student::operator=(const Student &student) {
 string Student::ToString() const {
 	stringstream ss;
 
-	ss << Person::ToString() << "Major: " << _major << " GPA: " << _gpa;
+	ss << Person::ToString() << " Major: " << _major << " GPA: " << _gpa;
 	return ss.str();
 }
 
