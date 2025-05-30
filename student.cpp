@@ -51,4 +51,5 @@ unsigned short int Student::GetGPA() const {
 }
 
 string Student::GetMajor() const {
+	return _major;
 }

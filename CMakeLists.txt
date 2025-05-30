@@ -7,4 +7,6 @@ add_executable(herencia1 main.cpp
         person.cpp
         person.h
         student.cpp
-        student.h)
+        student.h
+        professor.cpp
+        professor.h)
