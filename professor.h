@@ -11,8 +11,9 @@ class Professor : public Person {
 private:
 	char* _department;
 	double _salary;
+	unsigned int _rank;
 public:
-	Professor(const string& name, unsigned int age, const string& department, double salary);
+	Professor(const string& name, const string& id, unsigned int age, const string& department, double salary);
 	Professor(const Professor &professor);
 	~Professor();
 	Professor & operator=(const Professor &professor);
@@ -20,6 +21,9 @@ public:
 	string GetDepartment()const;
 	void SetDepartment(const string& department);
 	double Raise(double percentage);
+	unsigned int GetRank()const;
+	string GetRankString()const;
+	void Promote();
 };
 
 

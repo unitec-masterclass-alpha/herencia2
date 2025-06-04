@@ -10,16 +10,18 @@
 class Student : public Person {
 private:
 	char* _major;
-	unsigned short int _gpa; // 100 based
+	double _gpa; // 100 based
+	unsigned int _credits;
 public:
-	Student(const string& name, unsigned int age, const string& major, unsigned short int gpa = 0);
+	Student(const string& name, const string& id, unsigned int age, const string& major);
 	~Student();
 	Student(const Student& student);
 	Student& operator=(const Student& student);
 	string ToString()const;
 	void SetGPA(unsigned short int gpa);
-	unsigned short int GetGPA()const;
+	double GetGPA()const;
 	string GetMajor()const;
+	void AddGrade(double grade, unsigned int credits);
 
 };
 
